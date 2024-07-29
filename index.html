@@ -16,18 +16,19 @@
             }
           }
         }
-      </script>
-      <style type="text/tailwindcss">
+    </script>
+    <style type="text/tailwindcss">
         @layer utilities {
           .content-auto {
             content-visibility: auto;
           }
         }
-      </style>
+    </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <div class="hero">
-        <nav style="display: flex; justify-content: space-between; align-items: center;">
+        <nav style="display: flex; justify-content: space-between; align-items: center; padding-inline: 32px;">
             <div class="flex items-center gap-0">
                 <img class="w-12" src="images/logo.svg" alt="">
                 <p class="text-[20px] font-semibold tracking-tighter">Byte Fusion</p>
@@ -37,7 +38,6 @@
                     <li><a href="pages/about.html">About</a></li>
                     <li><a href="pages/services.html">Services</a></li>
                     <li><a href="pages/contact.html">Contact</a></li>
-                    
                 </ul>
             </div>
             <div class="flex gap-4">
@@ -46,16 +46,37 @@
             </div>
         </nav>
         <section class="hero-info">
-            <h1 class="font-black text-[56px] mt-40 mb-6" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Byte Fusion 🚀</h1>
+            <h1 class="font-black text-[56px] mt-40 mb-6" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Byte Fusion 🤖</h1>
             <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias fuga voluptatum vero, neque similique maiores. Est, assumenda sequi cumque eum veritatis, recusandae perspiciatis quas architecto non culpa suscipit a.</p>
         </section>
-        <section class="mt-12 relative">
+        <section class="mt-12 relative buttons">
             <div class="absolute h-[250px] -translate-x-1/2 rounded-full w-[260px] top-1/2 -translate-y-1/2 left-1/2 bg-gradient-to-r from-[#7af7bf] to-[#e65354] opacity-50 blur-[9px]"></div>
             <div class="flex justify-center gap-6 py-10 z-10 relative">
-                <button class="bg-black rounded-[20px] text-white font-semibold py-2 px-4 text-lg">Get Started</button>
+                <button class="bg-black rounded-[20px] text-white font-semibold py-2 px-4 text-lg hover:bg-white hover:text-black transition-all duration-300">Get Started</button>
                 <button class="border border-gray-600 py-2 px-4 rounded-[20px] bg-white text-md font-medium">Get a Demo</button>
             </div>
         </section>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            ScrollReveal().reveal('.hero-info', {
+                duration: 1750, 
+                origin: 'top', 
+                distance: '100px', 
+                opacity: 0, 
+                scale: 0.9 
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+          ScrollReveal().reveal('.buttons', {
+            duration: 1750,
+            origin:'bottom',
+            distance: '100px',
+            opacity: 0,
+            scale: 0.9
+          })
+        })
+    </script>
 </body>
 </html>
