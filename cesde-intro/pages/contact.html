@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body>
+    <nav class="w-full [&>*]:w-4/12" style="display: flex; justify-content: space-between; align-items: center;padding-inline: 32px;">
+        <a href="../index.html">
+            <div class="flex items-center gap-0">
+                <img class="w-12" src="../images/logo.svg" alt="">
+                <p class="text-[20px] font-semibold tracking-tighter">Byte Fusion</p>
+            </div>
+        </a>
+        <div>
+            <ul style="display: flex;gap: 10px;justify-content: center;">
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="recursos.html">Resources</a></li>
+                
+            </ul>
+        </div>
+        <div class="text-end">
+            registro
+        </div>
+    </nav>
+    <section class="hero-info flex flex-col items-center">
+        <h2 class="font-black text-[56px] mt-12 mb-6 text-center tracking-tighter" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Contact.</h2>
+        <p class="text-gray-600 text-center w-[65%]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias fuga voluptatum vero, neque similique maiores. Est, assumenda sequi cumque eum veritatis, recusandae perspiciatis quas architecto non culpa suscipit a.</p>
+    </section>
+
+    <section class="w-[75%] mx-auto mt-8 flex justify-center border border-gray-300 rounded-2xl overflow-hidden">
+      <div class="p-12 w-1/2 border border-gray-300 bg-gray-100">
+        <h3 class="font-bold text-2xl tracking-tight" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Get in touch.</h3>
+        <p class="text-gray-700 mt-4"> <span class="text-lg font-semibold text-back">🕻   call us </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem cupiditate</p>
+        <p class="text-gray-700 mt-4">  <span class="text-black font-semibold text-lg">✉ mail us</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores vitae</p>
+      </div>
+
+      <div class="p-12 w-1/2 border border-gray-300">
+        <form action="">
+          <div class="flex w-full justify-between gap-3">
+            <div class="w-full">
+              <p class="font-semibold text-lg">
+                Email
+              </p>
+              <input type="text" class="w-full bg-transparent border border-gray-400 rounded-md py-1 focus:outline-none mb-4">
+            </div>
+            
+            <div class="w-[40%]">
+              <p class="font-semibold text-lg">
+                Date
+              </p>
+              <input type="date"  min="1900-01-01" max="2006-07-01" class="w-full bg-transparent border border-gray-400 rounded-md focus:outline-none mb-4">
+            </div>
+
+          </div>
+          
+          <p class="font-semibold text-lg">
+            Phone
+          </p>
+          <input type="number" class="w-full bg-transparent border border-gray-400 rounded-md py-1 focus:outline-none mb-4">
+
+          <p class="font-semibold text-lg">
+            how can we help
+          </p>
+          <textarea class="border border-gray-400 rounded-md py-1 mb-4 w-full" name="" id=""></textarea> <br>
+          <button class="bg-black text-white rounded-[10px] w-full py-1" type="submit">Enviar.</button>
+        </form>
+      </div>
+    </section>
+
+    <h3 class="font-black text-[46px] mt-12 mb-6 text-center tracking-tighter" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Follow us.</h3>
+
+    <section class="flex items-center justify-center [&>div]:w-4/12 px-32 [&>div]:px-6 mt-12 text-gray-600 [&>div]:h-[300px]">
+      <div class="flex flex-col items-center gap-4 border border-gray-300 justify-center">
+        <img src="../images/x.svg" alt="">
+        <p><span class="font-bold text-black text-[24px] tracking-tighter"> Siguenos en X.</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum vitae a alias, optio quam molestiae voluptas similique minima perspiciatis inventore eaque tenetur, unde nihil!</p>
+      </div>
+      <div class="flex flex-col items-center gap-4 border border-gray-300 justify-center">
+        <img src="../images/facebook.svg" alt="">
+        <p><span class="font-bold text-black text-[24px] tracking-tighter"> Siguenos en Facebook.</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum vitae a alias, optio quam molestiae voluptas similique minima perspiciatis inventore eaque tenetur, unde nihil!</p>
+      </div>
+      <div class="flex flex-col items-center gap-4 border border-gray-300 justify-center">
+        <img src="../images/github.svg" alt="">
+        <p><span class="font-bold text-black text-[24px] tracking-tighter"> Siguenos en Github. </span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum vitae a alias, optio quam molestiae voluptas similique minima perspiciatis inventore eaque tenetur, unde nihil!</p>
+      </div>
+    </section>
+
+    <section class="grid place-items-center mt-16">
+      <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.142880792665!2d-75.56513602602698!3d6.244894226340364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442859d833cfa3%3A0xa3fca5c91547777f!2sCesde%20-%20Centro%20de%20Estudios%20Especializados!5e0!3m2!1ses!2sco!4v1722268910120!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+</body>
+</html>
